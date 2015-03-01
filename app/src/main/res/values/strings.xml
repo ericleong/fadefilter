@@ -1,0 +1,8 @@
+<resources>
+	<string name="app_name">Fade Filter</string>
+
+	<string name="fade_amount">Fade Amount</string>
+	<string name="action_load">Load Image</string>
+	<string name="no_image">No Image</string>
+	<string name="choose_image">Choose image</string>
+</resources>

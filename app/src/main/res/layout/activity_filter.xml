@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                tools:context=".FilterActivity">
+
+	<FrameLayout
+		android:layout_weight="1"
+		android:layout_width="match_parent"
+		android:layout_height="0dp">
+
+		<TextView
+			android:id="@+id/no_image"
+			android:text="@string/no_image"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"/>
+
+		<com.eleong.fadefilter.RatioGLSurfaceView
+			android:id="@+id/faded"
+			android:visibility="gone"
+			android:layout_gravity="center"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"/>
+
+	</FrameLayout>
+
+	<TextView
+		android:text="@string/fade_amount"
+		android:layout_marginTop="8dp"
+		android:layout_marginLeft="8dp"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+	<SeekBar
+		android:id="@+id/fade_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"/>
+
+</LinearLayout>
